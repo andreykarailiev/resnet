@@ -445,7 +445,7 @@ class ResNetFinetuner:
 class NeptuneResNetFinetuningArgs(ResNetFinetuningArgs):
     """Contains new params for use in neptune.Run, as well as all the ResNetFinetuningArgs params."""
     neptune_project: str | None = "andreykarailiev/resnet-tests"
-    neptune_name: str | None = "nebius-test"
+    neptune_name: str | None = "nebius-test-gpu-2"
 
 class NeptuneResNetFinetuner(ResNetFinetuner):
     args: NeptuneResNetFinetuningArgs  # adding this line helps with typechecker!
