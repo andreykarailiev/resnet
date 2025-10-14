@@ -16,7 +16,7 @@ from tqdm import tqdm
 
 chapter = "chapter0_fundamentals"
 section = "part3_optimization"
-root_dir = Path("/Users/andreykarailiev/ARENA_3.0")
+root_dir = Path("/home/andrey/resnet")
 exercises_dir = root_dir / chapter / "exercises"
 
 device = t.device("mps" if t.backends.mps.is_available() else "cuda" if t.cuda.is_available() else "cpu")
